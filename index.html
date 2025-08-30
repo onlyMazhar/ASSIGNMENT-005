@@ -39,7 +39,7 @@
             <div class="flex items-center justify-end gap-5 font-[Inter]">
                 <!-- life botton -->
                 <div class="flex items-center gap-[10px] bg-[#41ff6b1a] px-[30px] py-[8px] rounded-4xl">
-                    <p class="font-extrabold">0</p>
+                    <p id="heart-count" class="font-extrabold">0</p>
                     <img class="w-8" src="./assets/heart.png" alt="">
                 </div>
                 <!-- coin button -->
@@ -49,7 +49,7 @@
                 </div>
                 <!-- Copy Count -->
                 <div class="flex items-center bg-[#00A63E] px-[25px] py-[12px] rounded-4xl text-white font-bold">
-                    <p><span>2</span> Copy</p>
+                    <p><span id="copyfeild">2</span> Copy</p>
                 </div>
             </div>
         </nav>
@@ -71,29 +71,33 @@
         <!-- Main Sections Starts -->
         <div class="flex-1 grid grid-cols-3 gap-5">
             <div class="card bg-base-100 card-md shadow-sm  max-w-md ">
+                <!-- 1st Card -->
                 <div class="card-body gap-[1rem]">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-[10px] rounded-2xl">
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
-
                     </div>
-                    <!-- 1st Card -->
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl text-[#111111] lg:text-xl ">National Emergency Number</h2>
                             <p class="text-[#5C5C5C] text-lg lg:text-sm font-[Roboto]">National Emergency</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">999</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg md:text-sm bg-[#F2F2F2] p-4 rounded-2xl">All</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">999</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg md:text-sm bg-[#F2F2F2] p-4 rounded-2xl">
+                                All</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -106,7 +110,8 @@
                             <img class="w-8" src="./assets/police.png" alt="">
                         </div>
                         <div class="text-2xl  ">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -116,12 +121,16 @@
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Police</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl  font-bold font-[Roboto]">999</p>
-                            <div class="badge badge-sm text-[#5C5C5C] md:text-sm text-lg bg-[#F2F2F2] p-4 rounded-2xl">Police</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl  font-bold font-[Roboto]">999</p>
+                            <div class="badge badge-sm text-[#5C5C5C] md:text-sm text-lg bg-[#F2F2F2] p-4 rounded-2xl">
+                                Police</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +143,8 @@
                             <img class="w-8" src="./assets/fire-service.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -143,13 +153,20 @@
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Fire Service Number</h2>
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Fire Service</p>
                         </div>
-                        <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">999</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">Fire</div>
-                        </div>
-                        <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                        <div class="card-body">
+                            <div>
+                                <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">999</p>
+                                <div
+                                    class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                    Fire</div>
+                            </div>
+                            <div class="flex gap-2 ">
+                                <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                        class="fa-solid fa-copy"></i>Copy</button>
+                                <button
+                                    class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                        class="fa-solid fa-phone"></i>Call</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +179,8 @@
                             <img class="w-8" src="./assets/ambulance.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -172,16 +190,21 @@
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Ambulance</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">1994-999999</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">Health</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">1994-999999</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                Health</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- 5th Card -->
             <div class="card bg-base-100 card-md shadow-sm  max-w-md ">
                 <div class="card-body gap-[1rem]">
                     <div class="flex justify-between items-center">
@@ -189,23 +212,27 @@
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
-                    <!-- 5th Card -->
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Women & Child Helpline</h2>
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Women & Child Helpline</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">109</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">Help</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">109</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                Help</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +245,8 @@
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -228,12 +256,16 @@
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Anti-Corruption</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">106</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">Govt.</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">106</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                Govt.</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -246,7 +278,8 @@
                             <img class="w-8" src="./assets/emergency.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -256,12 +289,16 @@
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Electricity Outage</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">16216</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">Electricity</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">16216</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                Electricity</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -271,10 +308,11 @@
                 <div class="card-body gap-[1rem]">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-[10px] rounded-2xl">
-                            <img class="w-8" src="./assets/emergency.png" alt="">
+                            <img class="w-8" src="./assets/brac.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -284,12 +322,16 @@
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Brac</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">16445</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">NGO</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">16445</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                NGO</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -299,10 +341,11 @@
                 <div class="card-body gap-[1rem]">
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FFE3E2] p-[10px] rounded-2xl">
-                            <img class="w-8" src="./assets/emergency.png" alt="">
+                            <img class="w-8" src="./assets/Bangladesh-Railway.png" alt="">
                         </div>
                         <div class="text-2xl">
-                            <i class="fa-regular fa-solid fa-heart  hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
+                            <i
+                                class="fa-regular fa-solid fa-heart heart-icon hover:text-red-600 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"></i>
                         </div>
 
                     </div>
@@ -312,12 +355,16 @@
                             <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Bangladesh Railway</p>
                         </div>
                         <div>
-                            <p class="text-3xl lg:text-2xl font-bold font-[Roboto]">163</p>
-                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">Travel</div>
+                            <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">163</p>
+                            <div class="badge badge-sm text-[#5C5C5C] text-lg lg:text-sm  bg-[#F2F2F2] p-4 rounded-2xl">
+                                Travel</div>
                         </div>
                         <div class="flex gap-2 ">
-                            <button class="btn btn-soft h-8 bg-white flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
-                            <button class="btn btn-success flex-1 h-8 text-white bg-[#00A63E] border-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button class="btn btn-soft h-8 cp-btn bg-white flex-1"><i
+                                    class="fa-solid fa-copy"></i>Copy</button>
+                            <button
+                                class="btn btn-success flex-1 h-8  call-btn text-white bg-[#00A63E] border-[#00A63E]"><i
+                                    class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
@@ -327,12 +374,14 @@
         <div class="card bg-base-100 card-md shadow-sm  w-72 bg-white">
             <div class="card-body spa ">
                 <div class="flex justify-center items-center">
-                    <p class="font-[Roboto] font-semibold  text-lg lg:text-sm "><i class="fa-regular fa-clock"></i> Call History</p>
-                    <button class="btn btn-success  px-6 lg:px-4 text-white bg-[#00A63E] border-[#00A63E] rounded-4xl ">Clear</button>
+                    <p class="font-[Roboto] font-semibold  text-lg lg:text-sm "><i class="fa-regular fa-clock"></i> Call
+                        History</p>
+                    <button
+                        class="btn btn-success  px-6 lg:px-4 text-white bg-[#00A63E] border-[#00A63E] rounded-4xl ">Clear</button>
                 </div>
                 <div class="bg-red-500 max-h-[920px] overflow-y-auto mt-[1rem]">
-                  
-                    
+
+
                 </div>
             </div>
             <div class="bg-red-500 ">
@@ -340,6 +389,13 @@
         </div>
 
     </main>
+    <script>
+
+
+
+
+
+    </script>
     <script src="./script.js"></script>
 </body>
 
