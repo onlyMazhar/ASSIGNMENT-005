@@ -1,3 +1,5 @@
+const callHistryData = [];
+
 // click on heart icon, heart count increase
 document.querySelectorAll(".heart-icon").forEach(function (heart) {
   heart.addEventListener("click", function () {
@@ -50,16 +52,47 @@ document.querySelectorAll('.call-btn').forEach(function (callBtn) {
 
     if (coinNumberConverted < 20) {
       alert(`No Coin 😓 Available`)
-      return ;
+      return;
     }
     const cardBody = callBtn.closest(".card-body");
     const serviceName = cardBody.querySelector(".service-name").innerText;
-    const serviceNumber  = cardBody.querySelector(".hot-line-text").innerText;
-    console.log(serviceNumber,serviceName);
+    const serviceNumber = cardBody.querySelector(".hot-line-text").innerText;
+    console.log(serviceNumber, serviceName);
 
-    alert(`📞 Calling: ${ serviceName} ${ serviceNumber}...`)
+    alert(`📞 Calling: ${serviceName} ${serviceNumber}...`)
     let newCoinAmount = coinNumberConverted - 20;
     coin.innerText = newCoinAmount;
     console.log(newCoinAmount);
+
+    const callHistoryContainer = document.getElementById('call-history-container');
+    callHistoryContainer.innerHTML = '';
+    const data = {
+      name: serviceName,
+      number: serviceNumber,
+      date: new Date().toLocaleTimeString(),
+    };
+    callHistryData.unshift(data);
+    console.log(callHistryData);
+
+    for (const data of callHistryData) {
+      const div = document.createElement('div')
+      div.innerHTML = `
+       <div class=" bg-[#F2F2F2] mx-3 mb-2 flex rounded-lg p-2 justify-between items-center ">
+                    <div>
+                        <p class="font-bold">${data.name}</p>
+                        <p>${data.number}</p>
+                    </div>
+                    <div>
+                        <p>${data.date}</p>
+                    </div>
+                </div>
+      `
+      callHistoryContainer.appendChild(div);
+    }
   })
+})
+
+document.getElementById('clear-btn').addEventListener('click', function () {
+  const container = document.getElementById('call-history-container'); // Get your div element
+  container.innerHTML = '';
 })
