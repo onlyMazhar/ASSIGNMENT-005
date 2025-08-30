@@ -11,19 +11,14 @@ document.querySelectorAll(".heart-icon").forEach(function (heart) {
 
     heartNumber.innerText = heartFeildNumberConvert;
 
-    // console.log(heartNumber)
+
   });
 });
 
 // copy text update copy count, copy on clipboard and show alert
 document.querySelectorAll(".cp-btn").forEach(function (copyBtn) {
   copyBtn.addEventListener("click", function () {
-    // let copyElement = document.getElementById("copyfeild");
-    // let copyElementNumber = copyElement.innerText;
-    // let copyNumberConverted = parseInt(copyElementNumber);
-    // console.log(copyNumberConverted);
-    // // copyNumberConverted++;
-    // copyElement.innerText = copyNumberConverted;
+
 
     const cardBody = copyBtn.closest(".card-body");
     const numberElement = cardBody.querySelector(".hot-line-text");
@@ -54,6 +49,7 @@ document.querySelectorAll('.call-btn').forEach(function (callBtn) {
       alert(`No Coin 😓 Available`)
       return;
     }
+
     const cardBody = callBtn.closest(".card-body");
     const serviceName = cardBody.querySelector(".service-name").innerText;
     const serviceNumber = cardBody.querySelector(".hot-line-text").innerText;
@@ -66,13 +62,15 @@ document.querySelectorAll('.call-btn').forEach(function (callBtn) {
 
     const callHistoryContainer = document.getElementById('call-history-container');
     callHistoryContainer.innerHTML = '';
+
+
     const data = {
       name: serviceName,
       number: serviceNumber,
       date: new Date().toLocaleTimeString(),
     };
     callHistryData.unshift(data);
-    console.log(callHistryData);
+
 
     for (const data of callHistryData) {
       const div = document.createElement('div')
@@ -93,6 +91,7 @@ document.querySelectorAll('.call-btn').forEach(function (callBtn) {
 })
 
 document.getElementById('clear-btn').addEventListener('click', function () {
-  const container = document.getElementById('call-history-container'); // Get your div element
-  container.innerHTML = '';
+  const container = document.getElementById('call-history-container'); 
+  container.innerText = '';
+  callHistryData.length = 0;
 })
