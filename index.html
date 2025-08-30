@@ -32,7 +32,7 @@
         <!-- Nav Section Starts -->
         <nav class="max-w-[1536px] mx-auto flex justify-between px-[60px] py-2">
             <div class="flex items-center gap-3">
-                <img class="max-w-[65px]" src="./assets/logo.png" alt="">
+                <img class="max-w-[65px] " src="./assets/logo.png" alt="">
                 <h1 class="font-[Inter] text-2xl font-extrabold text-[#006747]">Emergency <br> Service</h1>
             </div>
 
@@ -44,12 +44,12 @@
                 </div>
                 <!-- coin button -->
                 <div class="flex items-center gap-[10px] bg-[#41ff6b1a] px-[25px] py-[12px] rounded-4xl">
-                    <p class="font-extrabold">100</p>
-                    <img class="w-6" src="./assets/coin.png" alt="">
+                    <p id="coin-number" class="font-extrabold">100</p>
+                    <img class="w-6" id="coin-img" src="./assets/coin.png" alt="">
                 </div>
                 <!-- Copy Count -->
                 <div class="flex items-center bg-[#00A63E] px-[25px] py-[12px] rounded-4xl text-white font-bold">
-                    <p><span id="copyfeild">2</span> Copy</p>
+                    <p><span id="copyfeild">0</span> Copy</p>
                 </div>
             </div>
         </nav>
@@ -85,7 +85,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl text-[#111111] lg:text-xl ">National Emergency Number</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm font-[Roboto]">National Emergency</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm font-[Roboto] service-name">National Emergency</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">999</p>
@@ -118,7 +118,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Police Helpline Number</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Police</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Police</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl  font-bold font-[Roboto]">999</p>
@@ -151,7 +151,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Fire Service Number</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Fire Service</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Fire Service</p>
                         </div>
 
                         <div>
@@ -186,7 +186,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Ambulance Service</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Ambulance</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Ambulance</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">1994-999999</p>
@@ -219,7 +219,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Women & Child Helpline</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Women & Child Helpline</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Women & Child Helpline</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">109</p>
@@ -252,7 +252,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Anti-Corruption Helpline</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Anti-Corruption</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Anti-Corruption</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">106</p>
@@ -285,7 +285,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Electricity Helpline</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Electricity Outage</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Electricity Outage</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">16216</p>
@@ -318,7 +318,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Brac Helpline</h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Brac</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Brac</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">16445</p>
@@ -351,7 +351,7 @@
                     <div class="flex flex-col gap-[24px]">
                         <div>
                             <h2 class="font-bold text-2xl lg:text-xl text-[#111111] ">Bangladesh Railway Helpline </h2>
-                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto]">Bangladesh Railway</p>
+                            <p class="text-[#5C5C5C] text-lg lg:text-sm  font-[Roboto] service-name">Bangladesh Railway</p>
                         </div>
                         <div>
                             <p class="hot-line-text text-3xl lg:text-2xl font-bold font-[Roboto]">163</p>
