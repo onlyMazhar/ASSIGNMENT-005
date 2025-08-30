@@ -26,6 +26,17 @@ document.querySelectorAll(".cp-btn").forEach(function (copyBtn) {
     const cardBody = copyBtn.closest(".card-body");
     const numberElement = cardBody.querySelector(".hot-line-text");
     const copyText = numberElement.innerText;
-    console.log(copyText)
+
+    navigator.clipboard.writeText(copyText)
+      .then(() => {
+        console.log(`Copied: ${copyText}`);
+
+        // 4. Increment global copy counter
+        const copyCounter = document.getElementById("copyfeild");
+        copyCounter.innerText = parseInt(copyCounter.innerText) + 1;
+      })
+      .catch(err => console.error("Failed to copy: ", err));
+
+    alert(`Copied: ${copyText}`);
   });
 });
