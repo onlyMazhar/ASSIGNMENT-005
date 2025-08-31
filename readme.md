@@ -1,6 +1,5 @@
  Navbar
 
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
 ### Ans 01.
 - **getelementById selects a single element with a unique id attribute and getElementsByClassName selects all the elements that has the class attribute.On the other hand querySelector selects the first element with CSS selector that has id or class or tag and AllquerySelector selects all elements that has a specific selecto.**
 
