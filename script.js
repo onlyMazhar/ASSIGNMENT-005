@@ -75,7 +75,7 @@ document.querySelectorAll('.call-btn').forEach(function (callBtn) {
     for (const data of callHistryData) {
       const div = document.createElement('div')
       div.innerHTML = `
-       <div class=" bg-[#F2F2F2] mx-3 mb-2 flex rounded-lg p-2 justify-between items-center ">
+       <div class=" bg-[#F2F2F2] ml-2 sm:mx-3 mb-2 w-[180px] flex flex-col  sm:flex-row items-start rounded-lg p-2 justify-between sm:items-center ">
                     <div>
                         <p class="font-bold">${data.name}</p>
                         <p>${data.number}</p>
@@ -92,6 +92,6 @@ document.querySelectorAll('.call-btn').forEach(function (callBtn) {
 
 document.getElementById('clear-btn').addEventListener('click', function () {
   const container = document.getElementById('call-history-container'); 
-  container.innerText = '';
+  container.innerHTML = '';
   callHistryData.length = 0;
 })
